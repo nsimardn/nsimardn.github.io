@@ -32,6 +32,60 @@
         .exp-logo { width: 60px; height: 60px; object-fit: contain; border-radius: 4px; background: #fff; }
         .exp-content { flex: 1; }
         @media (max-width: 600px) { .exp-item { flex-direction: column; align-items: center; text-align: center; } }
+        /* Links Grid: Forces 2 per row */
+.links-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    max-width: 450px;
+    margin: 0 auto 15px;
+}
+
+/* Language Pills Style */
+.header-languages {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.lang-pill {
+    background: #f0f4f8;
+    color: var(--primary);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    border: 1px solid #d1d9e0;
+}
+
+/* Table of Contents Styling */
+.toc {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 20px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.toc h3 {
+    margin: 0 0 10px 0;
+    font-size: 0.9em;
+    color: #888;
+    text-transform: uppercase;
+}
+
+.toc-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.toc-links a:hover {
+    text-decoration: underline;
+}
         
     </style>
 </head>
@@ -44,11 +98,18 @@
     
     <h1>Dr. Nicholas Simard</h1>
     <p>Postdoctoral Research Fellow in Biomedical Engineering | Medical Imaging (MRI) specialist</p>
-    <div class="links">
+    <div class="links-grid">
         <a href="https://scholar.google.ca/citations?user=P_P9u0MAAAAJ" target="_blank"><i class="fab fa-google"></i> Google Scholar</a>
         <a href="https://orcid.org/0000-0002-3151-6086" target="_blank"><i class="fab fa-orcid"></i> ORCID</a>
         <a href="https://www.linkedin.com/in/nicholas-simard-6a41a2129/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
         <a href="mailto:n3simard@torontomu.ca"><i class="fas fa-envelope"></i> Email</a>
+    </div>
+    
+    <div class="header-languages">
+        <span class="lang-pill"><strong>EN</strong> Fluent</span>
+        <span class="lang-pill"><strong>FR</strong> Fluent</span>
+        <span class="lang-pill"><strong>ES</strong> Basic</span>
+        <span class="lang-pill"><strong>TL</strong> Basic</span>
     </div>
 </header>
 
@@ -69,7 +130,16 @@
     </div> -->
 </section>
 
-<section>
+
+    
+<nav class="toc">
+    <h3>Quick Navigation</h3>
+    <a href="#education">Education</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Technical Toolkit</a>
+</nav>
+
+<section id="education">
 
     <h2>Education</h2>
     
