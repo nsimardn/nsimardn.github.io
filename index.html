@@ -3,44 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | nsimardn</title>
+    <title>Dr. Nicholas Simard | Portfolio</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; }
-        header { text-align: center; padding: 40px 0; }
-        .links { margin-top: 10px; }
-        .links a { margin: 0 10px; color: #0366d6; text-decoration: none; font-weight: bold; }
-        .poster-container { width: 100%; margin: 20px 0; border: 1px solid #ddd; border-radius: 8px; overflow: hidden; }
-        .poster-container img { width: 100%; height: auto; display: block; }
-        .resume-highlights { background: #f6f8fa; padding: 25px; border-radius: 8px; }
-        h2 { border-bottom: 2px solid #eaecef; padding-bottom: 10px; }
-        ul { padding-left: 20px; }
-        li { margin-bottom: 10px; }
+        :root { --primary: #004c97; --secondary: #555; --bg: #f9f9f9; }
+        body { font-family: -apple-system, system-ui, sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: 0 auto; padding: 20px; background: var(--bg); }
+        header { text-align: center; padding: 50px 0; background: white; border-radius: 12px; shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .links a { margin: 0 15px; color: var(--primary); text-decoration: none; font-weight: 600; border-bottom: 2px solid transparent; transition: 0.3s; }
+        .links a:hover { border-bottom: 2px solid var(--primary); }
+        .poster-box { width: 100%; margin: 30px 0; background: white; padding: 10px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        .poster-box img { width: 100%; height: auto; border-radius: 4px; }
+        .highlights { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+        h2 { color: var(--primary); border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .skill-tag { display: inline-block; background: #eef4ff; color: #004c97; padding: 4px 12px; border-radius: 20px; font-size: 0.9em; margin: 5px; font-weight: 500; }
+        ul { list-style-type: none; padding: 0; }
+        li { margin-bottom: 15px; padding-left: 20px; border-left: 3px solid #ddd; }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Your Name</h1>
-        <p>Researcher & Professional</p>
-        <div class="links">
-            <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank">Google Scholar</a>
-            <a href="https://orcid.org/YOUR_ORCID_ID" target="_blank">ORCID</a>
-        </div>
-    </header>
+<header>
+    <h1>Nicholas Simard</h1>
+    <p>PhD Student in Medical Physics | Machine Learning & Radiotherapy Research</p>
+    <div class="links">
+        <a href="https://scholar.google.ca/citations?user=P_P9u0MAAAAJ" target="_blank">Google Scholar</a>
+        <a href="https://orcid.org/0000-0002-3151-6086" target="_blank">ORCID</a>
+        <a href="mailto:n3simard@torontomu.ca">Contact Me</a>
+    </div>
+</header>
 
-    <section class="poster-container">
-        <img src="poster.jpg" alt="Research Poster">
-    </section>
+<div class="poster-box">
+    <img src="poster.jpg" alt="Current Research Poster">
+</div>
 
-    <section class="resume-highlights">
-        <h2>Resume Highlights</h2>
-        <ul>
-            <li><strong>Core Competency:</strong> Brief description of your main skill or research focus.</li>
-            <li><strong>Recent Achievement:</strong> Highlight a specific project or publication.</li>
-            <li><strong>Education:</strong> Your degree and institution name.</li>
-            <li><strong>Technical Skills:</strong> List your primary tools (e.g., Python, LaTeX, Data Analysis).</li>
-        </ul>
-    </section>
+<section class="highlights">
+    <h2>Academic & Professional Highlights</h2>
+    
+    <ul>
+        <li><strong>PhD Candidate, Medical Physics:</strong> Currently researching at Toronto Metropolitan University with a focus on Deep Learning and Radiation Oncology.</li>
+        <li><strong>Clinical Research Experience:</strong> Extensive background at <strong>Sunnybrook Health Sciences Centre</strong> and <strong>UHN</strong>, specializing in MR-guided radiotherapy and treatment planning.</li>
+        <li><strong>Machine Learning Expertise:</strong> Developed automated segmentation models and synthetic CT generation using GANs and Diffusion models.</li>
+        <li><strong>Teaching & Leadership:</strong> Experienced Graduate Teaching Assistant in Physics and Medical Imaging.</li>
+    </ul>
+
+    <h3>Technical Toolkit</h3>
+    <div class="skill-tags">
+        <span class="skill-tag">Python (PyTorch/TensorFlow)</span>
+        <span class="skill-tag">Medical Imaging (DICOM, RT-Struct)</span>
+        <span class="skill-tag">Treatment Planning (RayStation, Monaco)</span>
+        <span class="skill-tag">MATLAB</span>
+        <span class="skill-tag">Data Analysis</span>
+    </div>
+</section>
 
 </body>
 </html>
