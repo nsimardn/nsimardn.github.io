@@ -28,6 +28,39 @@
         .links i { margin-right: 5px; color: var(--primary); }
         .title-logo { height: 30px; width: auto; vertical-align: middle; margin-right: 12px; }
         h2 { display: flex; align-items: center; }
+        /* Layout for each experience item */
+.exp-item {
+    display: flex;
+    align-items: flex-start; /* Keeps logo at the top of the text block */
+    gap: 20px;               /* Space between logo and text */
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Specific styling for the experience logos */
+.exp-logo {
+    width: 60px;             /* Fixed width for consistency */
+    height: 60px;
+    object-fit: contain;     /* Ensures logo isn't stretched */
+    border-radius: 4px;
+    background: #fff;        /* Background color if logo is transparent */
+}
+
+/* Container for the text portion */
+.exp-content {
+    flex: 1;                 /* Allows text to take up remaining space */
+}
+
+/* Adjustments for mobile screens */
+@media (max-width: 600px) {
+    .exp-item {
+        flex-direction: column; /* Stacks logo on top of text on phones */
+        align-items: center;
+        text-align: center;
+    }
+}
+        
     </style>
 </head>
 <body>
